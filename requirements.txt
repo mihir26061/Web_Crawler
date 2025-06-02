@@ -1,0 +1,5 @@
+# aiohttp==3.9.5
+beautifulsoup4==4.13.4
+numpy==2.2.6
+pandas==2.1.4
+selenium==4.33.0
