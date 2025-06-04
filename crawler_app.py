@@ -8,7 +8,6 @@ from urllib.parse import urlparse, urljoin
 import os
 import pandas as pd
 
-# --- Logging Setup ---
 log_dir = "./logs"
 os.makedirs(log_dir, exist_ok=True)
 
@@ -26,7 +25,6 @@ console_handler.setFormatter(logging.Formatter('%(levelname)s - %(message)s'))
 logger.addHandler(file_handler)
 logger.addHandler(console_handler)
 
-# --- Helper Functions ---
 
 def is_product_url(url):
     product_keywords = ['/product/', '/products/', '/item/', '/p/', '/details/', '/shop/', '/pd/', '/collections/', 'cart', 'p-mp']
@@ -95,9 +93,9 @@ def crawl_site(start_url, max_pages=100):
 
 if __name__ == "__main__":
     sites = [
-        "https://www.virgio.com/",
         "https://nykaafashion.com/",
         "https://www.westside.com/",
+        "https://www.virgio.com/",
         "https://www.tatacliq.com/",
     ]
 
